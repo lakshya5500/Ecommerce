@@ -31,4 +31,9 @@ public class ProductServiceimp {
 		public List<Product> getAllProductByCategory(String c_type){
 			return productRepo.findBycat(c_type);
 		}
+	public List<Product> getAllProduct(String subcat ){
+		      List<Product> product = new ArrayList<Product>();
+		      productRepo.findBysubcat(subcat).forEach(Product -> product.add(Product));
+		      return product;
+}
 }
