@@ -18,12 +18,16 @@ public class productController {
 		return "index";
 		
 	}
-	@RequestMapping("/findByproduct")
-	public ModelAndView Find() {
-		ModelAndView mv=new ModelAndView("showproducts");
-		
-		mv.addObject(productService.getAllProductDetails());
-		return mv;
-		
-}
+//	@RequestMapping("/findbyproduct")
+//	public ModelAndView Find(@RequestParam String subcat) {
+//		ModelAndView mv=new ModelAndView("showproducts");
+//		
+//		mv.addObject(productService.getAllProduct(subcat));
+//		return mv;
+//	}
+	@RequestMapping("/findbyproduct")
+	public String FindAll(@RequestParam String subcat ,Model m) {
+		m.addAttribute("product",productService.getAllProduct(subcat));
+		return "showproducts";
+	}
 }
