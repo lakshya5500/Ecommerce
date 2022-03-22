@@ -609,7 +609,7 @@
     <!-- Start copyright  -->
     <div class="footer-copyright">
         <p class="footer-company">All Rights Reserved. &copy; 2018 <a href="#">Wakingtree</a> Design By :
-            <a href="https://html.design/">html design</a></p>
+            <a href="#">Project Done By - Daksh, Lakshya, Mukul Brothers</a></p>
     </div>
     <!-- End copyright  -->
 
