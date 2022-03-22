@@ -7,9 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action="findByproduct">
-Username : <input type="text" name="username">
-<input type="submit"> 
-</form>
+<a href="findByproduct">ClickHere</a>
 </body>
 </html>
