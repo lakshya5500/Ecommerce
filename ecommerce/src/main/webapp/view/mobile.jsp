@@ -354,14 +354,14 @@
                                 <p>Showing all 4 results</p>
                             </div>
                             <div class="col-12 col-sm-4 text-center text-sm-right">
-                                <ul class="nav nav-tabs ml-auto">
+                               <!-- <ul class="nav nav-tabs ml-auto">
                                     <li>
                                         <a class="nav-link active" href="#grid-view" data-toggle="tab"> <i class="fa fa-th"></i> </a>
                                     </li>
                                     <li>
                                         <a class="nav-link" href="#list-view" data-toggle="tab"> <i class="fa fa-list-ul"></i> </a>
                                     </li>
-                                </ul>
+                                </ul> -->
                             </div>
                         </div>
 
@@ -569,7 +569,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div role="tabpanel" class="tab-pane fade" id="list-view">
+                              <!--  <div role="tabpanel" class="tab-pane fade" id="list-view">
                                     <div class="list-view-box">
                                         <div class="row">
                                             <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
@@ -666,7 +666,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
 
