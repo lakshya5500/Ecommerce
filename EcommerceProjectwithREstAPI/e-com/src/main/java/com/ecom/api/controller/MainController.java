@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.ecom.api.entity.Cart;
 import com.ecom.api.entity.Product;
 import com.ecom.api.service.MainService;
 
@@ -45,6 +46,10 @@ public class MainController {
 		return mainService.name(pname);
 	}
 	
+	@GetMapping("/cart")
+	public List<Cart> bill() {
+		return mainService.details();
+	}
 	
 
 }
