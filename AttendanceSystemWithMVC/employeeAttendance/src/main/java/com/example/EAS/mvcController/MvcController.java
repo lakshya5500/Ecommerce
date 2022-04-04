@@ -23,16 +23,35 @@ public class MvcController {
 		return "index";
 		
 	}
-	@RequestMapping(value = "/admin", method = RequestMethod.GET)
-	public String Admin(Model m) {
-		List<Admin> ad=mainService.AllDetails();
-		m.addAttribute("ad",ad);
-		return "admin";
+	@RequestMapping(value = "/admin")
+	public String Admin(Model m, HttpServletRequest req) {
+		try {
+		//String username=req.getParameter("username");
+		int pass=Integer.parseInt(req.getParameter("pass"));
+		if(pass==1234) {
+			
+			List<Admin> ad=mainService.AllDetails();
+			m.addAttribute("ad",ad);
+			return "admin";
+		}
+	else {
+		
+		return "wpass";
 	}
-	@RequestMapping("/employee")
-	public String employee(HttpServletRequest req) {
-		int id=Integer.parseInt(req.getParameter("id"));
+		}catch (Exception e) {
+			return "wpass";
+		}
+	}
+	@RequestMapping(value = "/employee")
+	public String employee(HttpServletRequest req,Model m) {
+	
+	try {	int id=Integer.parseInt(req.getParameter("id"));
 		mainService.Pmark(id);
+		m.addAttribute("name",mainService.findemp(id));
 		return "employee";
+	}catch (Exception e) {
+		return "wpass";
 	}
+	}
+	
 }
