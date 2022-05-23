@@ -1,10 +1,67 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Welcome Employee</title>
+<style>
+body {
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(img/resume.jpg);
+  background-repeat: no-repeat;
+
+  height: 500px;
+
+}
+button {
+  background-color: #4781d8;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 7%;
+  float: right;
+  margin-right: 20px;
+}
+h1{
+    color:white;
+}
+button:hover {
+  opacity: 0.8;
+}
+</style>
 </head>
 <body>
+    <div class="w3-container">
+  
+
+        <div class="w3-bar w3-black">
+          <a href="/"><button type="button"  class="cancelbtn">Logout</button></a>
+        </div>
+
+<!-- <img src="icon.png" alt="Avatar" style="width:200px;padding-top: 100px;"> -->
+
+
+ <script type="text/javascript">
+        document.write("<center><font size=+3 style='color: White;float: left;'>");
+        var day = new Date();
+        var hr = day.getHours();
+        if (hr >= 0 && hr < 12) {
+            document.write("Good Morning!");
+        } else if (hr == 12) {
+            document.write("Good Noon!");
+        } else if (hr >= 12 && hr <= 17) {
+            document.write("Good Afternoon!");
+        } else {
+            document.write("Good Evening!");
+        }
+        document.write("</font></center>");
+        
+    </script>
 
 </body>
 </html>
